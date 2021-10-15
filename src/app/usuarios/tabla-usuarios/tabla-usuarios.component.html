@@ -1,0 +1,37 @@
+<div>
+
+
+<h1>Se cargo</h1>
+<table class="paleBlueRows">
+  <thead>
+    <tr>
+      <th>
+        Id
+      </th>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>email</th>
+      <th>fecha de nacimiento</th>
+      <th>domicilio</th>
+      <th>colonia</th>
+      <th>ciudad</th>
+      <th>cp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let usuario of usuarios">
+      <td>{{usuario.is}}</td>
+      <td>{{usuario.name}}</td>
+      <td>{{usuario.edad}}</td>
+      <td>{{usuario.email}}</td>
+      <td>{{usuario.fecha_nacimiento}}</td>
+      <td>{{usuario.domicilio.user_domicilio}} {{usuario.domicilio.numero_exterior}}  </td>
+        <td>{{usuario.domicilio.colonia}} </td> 
+        <td>{{usuario.domicilio.ciudad}}</td>  
+        <td>{{usuario.domicilio.cp}}</td>
+     </tr>
+      
+  </tbody>
+</table>
+
+ </div>
